@@ -1,0 +1,10 @@
+
+
+
+
+
+
+print('-' * 70)
+print('Hello word!!!')
+print('-' * 70)
+print()

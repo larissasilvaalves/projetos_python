@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+nome = 'daniela'
+nascimento = 2000
+altura = 1.58
+peso = 57.9
+doador = true
+complexo = 3j
+PI=3.14
+
+
+print('\033[0m \033[31mTipos declarados:\033[0m')
+print(')
