@@ -1,21 +1,22 @@
+#imports
 import os
 
 
 
-
+# limpar o terminal
 os.system('cls')
 
-
+# Entrada
 print('-'*70)
 print('ENTRADA DE DADOS EM PYTHON')
 print('='*70)
 
-nome = input('paulo vitor')
-nascimento = input('2005')
-peso = input('70.5')
-altura = input('1.75')
+nome = input('entre com um nome:')
+nascimento = input('data de nascimento:')
+peso = input('entre com o peso:')
+altura = input('entre com altura:')
    
-#SAIDA
+# Saída 
 print('-'*70)
 print('SAIDA DE DADOS')
 print('-'*70)
