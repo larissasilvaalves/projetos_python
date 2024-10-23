@@ -1,0 +1,27 @@
+import os
+
+
+
+
+os.system('cls')
+
+
+print('-'*70)
+print('ENTRADA DE DADOS EM PYTHON')
+print('='*70)
+
+nome = input('paulo vitor')
+nascimento = input('2005')
+peso = input('70.5')
+altura = input('1.75')
+   
+#SAIDA
+print('-'*70)
+print('SAIDA DE DADOS')
+print('-'*70)
+print('nome.......... ', nome)
+print('data de nascimento.........', nascimento)
+print('peso..........', peso)
+print('altura........', altura)
+print('-'*70)
+print('')

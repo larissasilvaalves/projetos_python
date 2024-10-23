@@ -14,7 +14,7 @@ nome = 'paulo vitor'
 nascimento = 2005
 altura = 1.73
 peso = 76.6
-doador = true
+doador = True
 complexo = 3j
 PI=3.14
 
