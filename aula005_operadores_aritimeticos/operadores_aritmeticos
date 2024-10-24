@@ -1,0 +1,65 @@
+# imports 
+import os
+
+# limpar o terminal 
+os.system ('cls')
+
+print('-'*70)
+print('OPERADORES ARITMÉTICOS')
+print('='*70)
+
+# Entrada de dados
+print('---SOMA')
+print('-'*70)
+parcela_1 = float(input('entre com a 1° parcela: '))
+parcela_2 = float(input(' entre com a 2° parcela:'))
+
+print()
+print( '--- SUBTRAÇÃO')
+print('-'*70)
+minuendo = float(input('entre com o minuendo: '))
+subtraendo = float(input('entre com o subtraendo:'))
+
+print()
+print('--- PRODUTO')
+print('-'*70)
+multiplicando = float(input('entre com o multiplicador: '))
+multiplicador = float(input('entre com o multiplicador: '))
+
+print()
+print('--- DIVISÃO')
+print('-'*70)
+dividendo = float(input('entre com o dividendo: '))
+divisor = float(input('entre com o divisor:'))
+
+print()
+print('--- RAIZ QUADRADA')
+print('-'*70)
+valor = float(input('entre com o valor de raiz quadrada: '))
+
+print()
+print('--- RAIZ CUBICA')
+print('-'*70)
+valor_2 = float(input('entre com o valor da raiz cubica: '))
+
+
+
+# processamento
+soma= parcela_1 + parcela_2
+diferenca = minuendo * subtraendo 
+produto = multiplicando * multiplicador
+quociente = dividendo / divisor 
+raiz_quadrada = valor ** (1/2)
+raiz_cubica = valor_2 ** (1/3)
+
+#saida 
+print('='*70)
+print('RESULTADOS')
+print('-'*70)
+print(f'A soma de {parcela_1} + {parcela_2} é: {soma}')
+print(f'A subtração de {minuendo} - {subtraendo} é : {diferenca}')
+print(f'A multiplicação de {multiplicando} * { multiplicador} é:{produto}')
+print(f'A divisão de {dividendo} / {divisor} é: {quociente}')
+print(f'A raiz quadrada do valor {valor} é: {raiz_quadrada}')
+print(f'A raiz_cubica do valor {valor_2} é:{raiz_cubica}')
+

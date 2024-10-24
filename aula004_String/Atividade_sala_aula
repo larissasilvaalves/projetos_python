@@ -1,0 +1,20 @@
+# imports 
+import os
+
+# limpar o terminal 
+os.system ('cls')
+
+print('-'*70)
+print('CADASTRO ESCOLAR')
+print('='*70)
+
+# Entrada
+aluno = input('entre com o nome do aluno:')
+ano_escolar = input('entre com o ano de escolaridade:')
+nacimento = int(input('entre com o nascimentodel duca:'))
+bairro = input('entre com o seu endereço:')
+
+#saida interpolada
+print(f'{aluno}, voce entrara no {ano_escolar}')
+print(f'nascimento.......:')
+
