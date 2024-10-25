@@ -1,0 +1,24 @@
+
+# imports
+import os
+os.system('cls')
+
+print('-'*70)
+print('Atividade_Número_001')
+print('='*70)
+
+# Entrada
+numero1 = float(input('1° Nota: '))
+numero2 = float(input('2° Nota: '))
+numero3 = float(input('3° Nota: '))
+
+# processamento
+soma = numero1 + numero2 + numero3
+produto = numero1 * numero2 * numero3
+
+# saída
+print('='*70)
+print('RESULTADOS')
+print('-'*70)
+print(f'A multiplicaçaõ de {numero1} * {numero2}* {numero3} é: {produto}')
+print(f'A soma de {numero1} + {numero2} + {numero3} é: {soma}')

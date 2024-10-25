@@ -1,0 +1,27 @@
+# import
+import os 
+#biblioteca para pegar data e hora do sistema
+import datetime
+
+os.system('cls')
+
+print('-'*70)
+print('ENTRADA DE DADOS EM PYTHON')
+print('='*70)
+
+# Entrada de casting
+nascimento = int(input('entre a data de nascimento: '))
+ano_atual = int(input('entre com o ano atual: '))
+
+#processamento: pegando o ano corrente 
+ano_atual = datetime.datetime.now().year
+idade = int(ano_atual) - nascimento
+ 
+#saída interlogada
+print(f'PARABENS! você tem {idade} anos!!!')
+print('-'*70)
+print('SAÍDA DE DADOS')
+print('='*70)
+
+
+
