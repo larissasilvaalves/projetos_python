@@ -1,0 +1,32 @@
+import os
+
+os.system('cls')
+
+#declarações 
+
+a = 10
+b = 5
+repostas = ''
+
+print('-'* 70)
+print('estudo de condicional')
+print('='*70)
+
+#condicionais 
+
+if a > b : 
+    resposta = f' {a} é maior {b}'
+else:
+    resposta = f'{a} não é maior que {b}'
+
+#saída
+
+ print('-'*70)
+print(resposta)
+
+#declaração 
+a = 5 
+b = 5
+
+print('-'*70)
+print('estudo de condicional (ami)')

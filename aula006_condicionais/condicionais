@@ -1,0 +1,24 @@
+#imports 
+import os 
+
+os.system('cls')
+
+print('-'*70)
+print('ESTUDO DE CONDICIONAL: PARTE 1')
+print('='*70)
+
+#ENTRADA
+
+numero = float(input('digite um numero: '))
+resposta = ''
+
+#CONDICIONAL
+if numero % 2 == 0 :
+    resposta = f'o numero {numero} é par ' 
+else :
+    resposta = f' o numero {numero} é impar '   
+
+print('='*70)
+print(resposta)
+
+print('fim do programa!\n') #\n salta uma linha
