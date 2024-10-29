@@ -1,0 +1,56 @@
+import os
+
+
+#limpando o terminal
+os .system('cls')
+
+#declaração
+a = 10
+b = 5
+c = 'shamyra'
+
+print('-'*70)
+print('condicionais: operadores lógicos')
+print('='*70)
+
+# E (and) VERDADEIRO
+print('E (and) VERDADEIRO')
+if (a > 5 and b != c):
+    print('verdadeiro: bloco executado')
+else:
+    print('falso: bloco executado')
+print('-'*70)
+# E (and)  FALSO
+print('E (and) FALSO')
+if (a > 5 and b == c):
+    print('verdadeiro: bloco executado')
+else:
+    print('falso: bloco executado')
+
+print('.'*70)
+ 
+ # e (and) FALSO
+print('E (and) FALSO')
+if (a > 5 and b == c):
+    print('verdadeiro: bloco executado')
+else:
+    print('falso: bloco executado')
+
+print('-'*70)
+# OU (or) VERDADEIRO
+print('OU (or) VERDADEIRO')
+if (a > 5 or b == c):
+    print('verdadeiro: bloco executado')
+else: 
+    print('falso: bloco executado')
+
+print('.'*70)
+
+# OU (or) FALSO
+print('OU (or) FALSO')
+if(a < 5 or c == 'shamyra'):
+    print('verdadeiro: bloco executado')
+else:
+    print('falso: bloco executado')
+print('-'*70)
+print()
