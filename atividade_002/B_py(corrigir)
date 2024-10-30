@@ -34,15 +34,3 @@ if c > a and c > b :
     print(f'{c} é o maior númeo entre {a} e {b}')
 else:
     print(f'{c} é menor que {a} e {b}')
-
-
-
-
-
-
-
-
-
-
-
-
