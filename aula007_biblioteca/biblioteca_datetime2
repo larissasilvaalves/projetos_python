@@ -1,0 +1,21 @@
+import math
+import os
+
+os.system('cls')
+
+print('-'*50)
+print('ESTUDO DA BIBLIOTECA MATÉMATICA MATH')
+print('='*50)
+
+#entrada de dados
+numero_decimal = float(input('entre com um número decimal: '))
+
+#proessamento 
+arredondar_para_cima = math.ceil(numero_decimal)
+arredondar_para_baixo = math.floor(numero_decimal)
+
+#saída 
+print('-'*50)
+print(f'o numero {numero_decimal} arrendondado para cima é:  {arredondar_para_cima}')
+print(f'o numero {numero_decimal} arrendondado para baixo é: {arredondar_para_baixo}')
+print('-'*50)

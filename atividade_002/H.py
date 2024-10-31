@@ -12,8 +12,16 @@ os.system ('cls')
 
 #declaração
 
-a = int(input('entre com o algoritmo a: '))
-b = int(input('entre com o algoritmo b: '))
-c = int(input('entre com o algoritmo c: '))
+a = 1
+b = -6
+c = 5
 
-delta = 
+delta = (b**2) - (4* a * c)
+print('-'*70)
+#print(delta)
+
+raiz_primaria = ((-b) + (delta**(1/2))) / 2 * a
+raiz_secundaria = ((-b) -(delta**(1/2))) / 2 * a
+print('-'*70)
+print(raiz_primaria)
+print(raiz_secundaria)
