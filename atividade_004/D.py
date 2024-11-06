@@ -2,7 +2,7 @@ import os
 
 os.system('cls')
 
-frase = 'Amo Meu Morceguin'
+frase = 'Amo Meu namorado'
 
 
 #processamento
@@ -21,3 +21,5 @@ print('-'*70)
 
 separacao_variaveis = frase.split(" ")
 print(f'{separacao_variaveis}')
+quantidade_caracteres = len('meu')
+print(f'a segunda palavra tem {quantidade_caracteres} letras!')
