@@ -12,7 +12,7 @@ print('PROGRAMA DE LEITURA')
 print()
 
 #entrada
-nome = str(input('Entre com o nome completo:'))
+nome = str(input('Entre com o nome completo:')).lower()
 
 #processamento 
 

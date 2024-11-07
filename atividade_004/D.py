@@ -19,7 +19,7 @@ maisculas = frase.upper()
 print(f'a frase completamente maiúscula irá ficar "{maisculas}"')
 print('-'*70)
 
-separacao_variaveis = frase.split(" ")
+separacao_variaveis = frase.split()
 print(f'{separacao_variaveis}')
 quantidade_caracteres = len('meu')
 print(f'a segunda palavra tem {quantidade_caracteres} letras!')
