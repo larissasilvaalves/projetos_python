@@ -18,7 +18,7 @@ media_correta = (nota1 + nota2 + nota3+ nota4) / 4
 
 print( '----notas-----')
 print(f'nota1 : {nota1} | nota 2 {nota2} |'
-      f )
+      f'' )
 print('-'*70)
 print('MEDIA DE NOTAS : {media} ')
 print('MEDIA CORRETA DAS NOTAS: {media_correta}')
