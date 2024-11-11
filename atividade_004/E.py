@@ -10,7 +10,7 @@ frase = str(input('entre com sua frase: ' ))
 quantidade_de_A = frase.count('a')
 quantidade_de_E = frase.count('e')
 quantidade_de_I = frase.count('i')
-quantidade_de_O = frase.count('i')
+quantidade_de_O = frase.count('o')
 quantidade_de_U = frase.count('u')
 
 print(f'A quantidade de a quantidade de A que aparece foi {quantidade_de_A}')

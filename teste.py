@@ -16,6 +16,9 @@ multiplicação = a * b * c
 divisão = a / b / c
 expresão_matematica = a / b + c
 
+
+
+
 #saída
 print('-'*70)
 print(f'o resultado da multiplicação é : {multiplicação} ')
@@ -38,3 +41,7 @@ print(f'Meu nome é {nome}, nasci em {nascimento}; na cidade de {município} e m
 print('')
 
 
+variavel = "fernando"
+
+maiuscula = variavel.lower()
+print(maiuscula)
