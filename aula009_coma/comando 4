@@ -1,0 +1,22 @@
+import os 
+ 
+os.system('cls')
+
+print('-'*50)
+print('ESTRUTURA DE CONTROLE COM INPUT E IF')
+print('='*50)
+
+print()
+
+soma = 0 
+
+for var_iteradora in range (0,4):
+    numero = int(input(f'{var_iteradora + 1}º numero :'))
+
+    if (numero%2 ==0):
+        print(f'o numero {numero} é par')
+    else:
+        print(f'o numero {numero} é impar')
+
+    print('-'*70)
+    print()

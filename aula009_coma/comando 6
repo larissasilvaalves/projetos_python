@@ -1,0 +1,19 @@
+import os 
+
+os.system('cls')
+
+print('-'*70)
+print('BREAK')
+
+
+for c in range(0, 10): 
+   
+    print(f'valor de: {c}')
+
+    
+    if (c == 5):
+        print(f'a contagem termina em {c}')
+        break
+
+print('-'*70)
+print('fim do progama')
