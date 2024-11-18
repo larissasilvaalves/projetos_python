@@ -1,0 +1,9 @@
+import os 
+
+os.system('cls')
+
+
+for i in range(0 , 1000):
+    print(f'necessito ir em um show do orochi {i}')
+
+print('-'*70)
