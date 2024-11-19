@@ -1,0 +1,6 @@
+for i in range(0, 100): 
+    print(f'a contagem é {i}')
+
+    if i == 54: 
+        print(f'o numero {i} não está na contagem')
+        break
