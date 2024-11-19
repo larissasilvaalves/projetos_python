@@ -4,6 +4,11 @@ os.system('cls')
 
 
 for i in range(0 , 1000):
-    print(f'necessito ir em um show do orochi {i}')
+   print(f'valor: {i}')
 
+
+   if (i == 567): 
+      print(f'a contagem parou no {i}') 
+      break
+   
 print('-'*70)
