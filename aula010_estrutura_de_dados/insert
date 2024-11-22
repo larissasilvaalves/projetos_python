@@ -1,0 +1,15 @@
+import os 
+
+os.system('cls')
+
+lista = [ 1, 2, 3, 4]
+
+posicao = int(input('A posiçaõ do elemnto que voce deseja é:  '))
+elemento = int(input('o elemento desejado: '))
+
+if posicao >= 0 and posicao <= len(lista): 
+    
+    lista.insert(elemento, posicao)
+    print('lista após a inserção:', lista)
+else: 
+    print(f'a posição esta fora do intervalo 0 , {len(lista)}')

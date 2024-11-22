@@ -1,0 +1,16 @@
+import os 
+
+os.system('cls')
+
+lista_de_numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+indice = int(input('Digite o indice a ser removido (0-9): '))
+
+
+if 0 <= indice < len(lista_de_numeros):
+    elemento_removido = lista_de_numeros.pop(indice)
+    print(f'o elemento removido: {elemento_removido} ')
+else:
+    print(f'indice inválido')
+
+print('lista apos remoção:', lista_de_numeros)

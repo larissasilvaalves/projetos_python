@@ -1,0 +1,24 @@
+import os 
+
+os.system('cls')
+
+entrada = input('Digite os números seperadamente: ')
+
+numeros_str = entrada.split()
+
+numeros = []
+
+for num_str in numeros_str: 
+    numeros.append(int(num_str))
+
+
+numero_para_contar = int(input('digite o numero que deseja contar: '))
+
+contagem = numeros.count(numero_para_contar)    
+
+if contagem > 0:
+    print(f'o número {numero_para_contar} aparece {contagem} vez na lista')
+else:
+    print(f'o número {numero_para_contar} não aparece na lista! ')
+
+print(f'a lista oferecida foi {numeros}')
