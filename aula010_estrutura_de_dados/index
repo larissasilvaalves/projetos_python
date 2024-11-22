@@ -1,0 +1,14 @@
+import os 
+
+os.system('cls')
+
+entrada = input('digite os números separadamente: ')
+
+numeros_str = entrada.split()
+
+numeros = []
+
+for num_str in numeros_str:
+    numeros.append(int(num_str))
+
+busca_numero = int(input('digite o numero que deseja encontrar:     '))
