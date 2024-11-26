@@ -11,30 +11,29 @@ import random
 
 os.system('cls')
 notas = []
-while (True):
-    
-    nota = input('Digite suas nota que voce ira utilizar, ou "s" para sair: ').lower().strip()
+soma = 0
+quantidade = 0
 
-    if nota == "s" or nota =="0":
-        break
-    
-        
+nota = int(input('Digite suas notas: '))
 
-# #quantidade de notas lidas
-#     quantidade = notas.len()
-#     print(f'a qauntidade de notas lidas foram {quantidade}')
+while nota != "s" and nota != "0":
+  
+    soma += int(nota)
+    notas.append(nota)
+    nota = input('digite suas notas: ')
 
+print(f'nota {notas}')
 
+quantidade = len(notas)
+print(quantidade)
 
+media = soma/quantidade
+print(media)
 
+inverso = notas[::-1]
+print(inverso)
 
+for c in range(0, quantidade):
+    print(notas[c])
 
-
-
-
-
-
-
-   
-
-
+print('fim do programa.')
