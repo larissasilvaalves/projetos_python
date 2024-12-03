@@ -1,0 +1,54 @@
+import os 
+
+os.system('cls')
+
+
+numeros = int(input('entre com o seu algoritmo: '))
+
+elementos = []
+
+for c in range(numeros):
+    while True:
+        valor = input(f'digite o valor {c + 1}: ')
+        if valor.isdigit():
+         elementos.append(int(valor))
+         break
+        else:
+           print(f'entrada errada! Digite um número')
+
+tupla = tuple(elementos)
+
+print('-'*70)
+
+print(f'tupla criada foi: {tupla}')
+print('-'*70)
+
+
+
+while True:
+    valor = int(input('verifique se o número é tupla: '))
+    
+
+
+    if valor in tupla:
+            print(f'o número {valor} está na tupla.')
+
+
+            contagem = tupla.count(valor)
+            print(f' o número {valor} aparece {contagem} vez(es).')
+
+            indice = tupla.index(valor)
+            print(f'a primeira ocorrencia de {valor} esta no {indice}')
+    else:      
+            print( f'o numero {valor} não está na tupla')
+
+    continuar = input('deseja continuar? (s/n): ').lower
+    if continuar != 's' :
+         print('encerramento do programa. Até nunca mais!')
+         break
+print('-'*70)
+print('fim do programa')
+print()
+
+
+

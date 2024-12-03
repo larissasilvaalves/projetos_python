@@ -1,0 +1,37 @@
+import os 
+
+os.system('cls')
+
+#criação de um programa que pede ao usuário uma lista, depois retira um número da lista entregue ao sistema
+
+
+set = {"julia", "isabela" , "ana livia", "miguel"}
+print(f'sua lista de nomes será essa "{set}" , deseja excluir algum insurportavel? ')
+responda = input('deseja retirar? (s/n): ')
+
+while responda.lower() == "s":
+
+
+    if responda == "s":
+        nome = input(f'retire o nome desejado: ')
+        set.remove(nome)
+        print(f'sua lista irá ficar assim agora {set}')
+        print('-'*70)
+    else:
+        print('voce escolheu não tirar o nome de ninguem da lista!')
+        print('-'*70)
+        break
+        
+
+
+
+    
+    
+
+
+
+
+
+
+
+
