@@ -1,0 +1,17 @@
+import os 
+
+os.system('cls')
+
+
+set = {"julia", 'miguel', "isabela", "ana livia"}
+print(set)
+respostas = input("Deseja retirar algum nome de sua lista? ")
+
+
+
+
+while ():
+
+    if 
+
+    
