@@ -50,7 +50,7 @@ while True:
     elif opcao == "4":
        
        copia_dicionario = meu_dicionario.copy()
-       print(f"copia do dicionário: ," copia_dicionario)
+       print(f"copia do dicionário: ", copia_dicionario)
 
     elif opcao == "5":
        
