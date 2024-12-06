@@ -1,0 +1,50 @@
+import os 
+
+os.system('cls')
+
+meu_dicionario = {}
+
+while True:
+    print('-'*70)
+    print('\nMenu dee opções:')
+    print('1. Adicionar um par chave-valor')
+    print('2. Mostrar chaves de dicionário')
+    print('3. Mostrar valores do dicionário')
+    print('4. Mostrar itens do dicionário')
+    print("5. sair")
+
+    opcao = input('escolha  uma opção (1-5): ')
+
+    if opcao == "1":
+
+        chave = input('digite a chave: ')
+        valor = input('digirte o valor: ')
+        meu_dicionario[chave] = valor
+        print(f"par {chave}: {valor} adicionado.")
+
+    elif opcao=="2":
+
+        if meu_dicionario:
+            print('chaves do dicionário:', meu_dicionario.keys())
+        else:
+            print('O dicionário está vazio. Adicione itens primeiro.')
+
+    elif opcao == '3':
+
+        if meu_dicionario:
+            print('valores do dicionário:', meu_dicionario.values())
+        else:
+            print('O dicionário está vazio. Adicione itens primeiro.')
+
+    elif opcao == "4":
+        if meu_dicionario:
+            print('itens do dicionário:', meu_dicionario.items())
+        else:
+            print('O dicionário está vazio. Adicione itens primeiro.')
+
+    elif opcao == "5":
+        print('saindo do programa.')
+        break
+
+    else:
+        print('opção inválida. Tente novamente.')

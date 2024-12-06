@@ -1,0 +1,50 @@
+import os 
+
+os.system('cls')
+
+print('-'*70)
+print('ESTRUTURA DE DADOS: DICIONARIO')
+print('-'*70)
+
+compras = {}
+pessoas = {}
+cores = {}
+elementos = dict()
+numeros = dict()
+
+
+compras['id'] = 1
+compras["item"] = 'caderno'
+compras["valor"] = '12.60'
+
+
+pessoas["id"] = "0010"
+pessoas["nome"] = "toguro"
+pessoas['endereço'] = "vila ideal"
+pessoas['numero'] = '24C'
+pessoas['cidade'] = "juiz de fora "
+pessoas['pais']= 'brasil'
+
+cores['blue'] = 'azul'
+cores['red']= 'vermelho'
+cores['green'] = 'verde'
+
+elementos['cu'] = "cobre"
+elementos['Au'] = 'ouro'
+elementos['n'] = 'nitrogenio'
+
+
+numeros[1] = '100'
+numeros[2] = '200'
+numeros[3] = "300"
+
+
+#saidasimples
+
+print(f'minhas compras foram:{compras}')
+print(f'cria do morro: {pessoas}')
+print(f'o nome dass cores são: {cores}')
+print(f'os elementos são: {elementos}')
+print(f'os numeros são: {elementos}')
+print('-'*70)
+print()

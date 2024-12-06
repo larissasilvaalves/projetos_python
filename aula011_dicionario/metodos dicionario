@@ -1,0 +1,65 @@
+import os
+
+os.system('cls')
+
+meu_dicionario = {}
+
+while True:
+    print('-'*70)
+
+    print('\nmenu de opções:')
+    print('1. Adicionar de par chave-valor')
+    print("2. mostrar  o dicionarío")
+    print('3. mostrar o tamanho do dicionarío')
+    print('4. fazer uma ncópia de dicionarío')
+    print("5. limpar o dicionarío")
+    print('6. sair')
+    print('-'*70)
+
+
+    opcao = input('escolha uma opção (1-6)')
+
+
+    if opcao == "1":
+
+        chave = input('digite a chave:')
+
+        while not chave: 
+         print('A chave nãoi pode ser vazia. tente novamente')
+         chave = input('digite a chave:')
+
+        valor = input('Digite o valor:')
+
+        while not valor:
+           print('O valor não pode ser vazio. tente novamente')
+           valor = input('digite o valor: ')
+
+        meu_dicionario[chave] = valor 
+        print(f'par {chave}: {valor} adicionado.')
+
+
+    elif opcao == "2":
+       
+       print('dicionario atual :', meu_dicionario)
+
+    elif opcao == "3":
+       
+       tamanho = len(meu_dicionario)
+       print(f'o dicionario tem {tamanho} elementos.')
+
+    elif opcao == "4":
+       
+       copia_dicionario = meu_dicionario.copy()
+       print(f"copia do dicionário: ," copia_dicionario)
+
+    elif opcao == "5":
+       
+       meu_dicionario.clear()
+       print('dicionario limpo')
+    elif opcao == "6":
+       
+       print('saindo do programa')
+       break
+
+    else:
+       print('opção inválida. Tente novamente.')
