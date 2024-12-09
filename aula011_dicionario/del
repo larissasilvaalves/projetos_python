@@ -1,0 +1,83 @@
+import os
+os.system('cls')
+
+agenda = {
+    "mercadinho": "99857-3456",
+    "palhação do mal": "67362-7665", 
+    "chiquita sueta" : '78234-7698',
+    "pracinha" : "45678-2345",
+    "morceguinho" : "89654-6709",
+    "militar" : "56747-6789",
+    'manco' : "34567-8790",
+}
+
+while True:
+    
+    print('\nAgenda de contatos: ')
+    for nome, telefone in agenda.items():
+        print(f'{nome}: {telefone}')
+    print('-'*70)
+
+
+    if "mercadinho" in agenda:
+        print(f'primeiro teste: vereficando se a mercadinho está na agenda!')
+        print(f'VERDADEIRO! mercadinho está em sua agenda telefônica!')
+    else:
+        print(f'FALSO! mercadinho não em sua agenda! (adiciona o shamyrão ai po)')
+
+    print()
+
+
+    if "abelinha" not in agenda:
+        print(f'VERIFICANDO SUA AGENDA!')
+        print(f'abelinha não está em sua agenda telefônica')
+    else:
+        print(f'FALSO! abelinha está em sua lista telefônica')
+        
+    print('-'*70)
+    print()
+
+    print('-'*70)
+    print('Menu de opções: ')
+    print('1. Adicionar um contato')
+    print('2. Remover um contato')
+    print('3. Verificar contato específico')
+    print('4. Mostrar agenda')
+    print('5. Sair')
+
+    opcao = input('Escolha uma opção de (1-5): ')
+
+    if opcao == "1":
+        nome = input('Digite o nome do contato: ')
+        numero = input('Digite o número do contato: ')
+        agenda[nome] = telefone
+        print(f'O contato adicionado foi: {nome}:{telefone}')
+
+    elif opcao == "2":
+        nome = input('Digite o nome do contato que deseja remover')
+        
+        if nome in agenda:
+            del agenda[nome]
+            print(f'o contato {nome} foi removido de sua agenda!  ')
+
+
+    elif opcao == "3":
+        
+        nome = input('digite o nome que deseja encontrar: ')
+        if nome in agenda:
+            print(f'o contato {nome} : {agenda[nome]} foi encontrado!')
+
+        else:
+            print(f'O contato {nome} não encontrado em sua agenda! ')
+
+    elif opcao == "4":
+        print('n\Agenda de contatos: ')
+        print(agenda)
+
+    elif opcao== "5":
+        print('saindo do programa.')
+        break
+    else:
+        print('opção inválida.Tente novamente!')
+    
+    input('\nPresione enter para continuar...')

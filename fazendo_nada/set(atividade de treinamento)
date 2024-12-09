@@ -6,11 +6,10 @@ os.system('cls')
 
 
 set = {"julia", "isabela" , "ana livia", "miguel"}
-print(f'sua lista de nomes será essa "{set}" , deseja excluir algum insurportavel? ')
-responda = input('deseja retirar? (s/n): ')
+print(f'sua lista de nomes será essa "{set}"!')
+responda = input('deseja retirar algum nome? (s/n): ')
 
 while responda.lower() == "s":
-
 
     if responda == "s":
         nome = input(f'retire o nome desejado: ')
@@ -22,16 +21,16 @@ while responda.lower() == "s":
         print('-'*70)
         break
         
+    print('deseja acrescentar algum nome em sua lista?')
+    resposta = input("(s/n): ")
 
+    if resposta == "s":
 
-
+        adicione = input('adicione o nome desejado a sua lista: ')
+        set.add(adicione)
+        print(f'sua lista ira ficar:', set)
+        print('-'*70)
+    else:
+        print(f'Voce desejou acrescentar nada em sua lista!')
+        print('-'*70)
     
-    
-
-
-
-
-
-
-
-

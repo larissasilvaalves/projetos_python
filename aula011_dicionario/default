@@ -1,0 +1,55 @@
+import os 
+
+os.system('cls')
+
+
+meu_dicionarip = []
+
+
+while (True):
+    print('-'*70)
+    print('\nMenu dee opções:')
+    print('1. Adicionar um par chave-valor')
+    print('2. Definir valor padrão para uma chavce usando setdefault()')
+    print('3. Mostrar atualização com update() ')
+    print('4. Mostrar dicionário atual')
+    print("5. sair")
+
+
+    opcao = input('escolha uma opção: (1-5): ')
+
+    if opcao == "1":
+
+        chave = input('entre com sua chave: ')
+        valor = input("digite o valor chave:  " )
+        meu_dicionarip[chave] = valor
+        print(f'o valor de sua chave será igual a : {meu_dicionarip}')
+
+    if opcao == "2":
+
+        chave = input('digite o valor de sua chave: ')
+        valor_padrao = input('digite o valor padrão: ')
+        valor_existente = meu_dicionarip.setdefault(chave, valor_padrao)
+        print(f'o valor para a chave "{chave}": {valor_existente}')
+    elif opcao == "3":
+
+        novos_pares = input('digite os novos pares chave-valor\
+                            no formato chave1:valor,chave:valor2:' )
+        novos_pares_lista =  novos_pares.split(',')
+        novos_dados = {}
+        for par in novos_pares_lista:
+            chave, valor = par.split(':')
+            novos_dados[chave] = valor
+        meu_dicionarip.update(novos_dados)
+        print('dicionario atualizado:', meu_dicionarip)
+
+    elif opcao == "4":
+
+        if meu_dicionarip:
+            print('dicionario atual:', meu_dicionarip)
+        else:
+            print('Saida do programa.')
+            break
+
+    elif opcao == "5":
+        print('opção inválidda. Tente novamente!')
