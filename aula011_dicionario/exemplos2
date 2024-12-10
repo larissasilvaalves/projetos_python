@@ -1,0 +1,106 @@
+import os 
+
+
+
+print('-'*70)
+print('----TABELA PERIÓDICA-----')
+print('='*70)
+
+
+elementos = []
+periodica = []
+
+while True:
+    os.system('cls')
+
+    #menus
+    print('-'*70)
+    print('MENU DE OPÇÕES')
+    print('='*70)
+    print('1. Adicionar um elemento ')
+    print("2. Visualizar os elementos")
+    print('3. Atulizar um elemento')
+    print('4. Remover um elemento')
+    print('5. Sair ')
+    print('-'*70)
+
+    opcao = input('entre com umas das opções (1/5): ')
+
+
+    if opcao == "1":
+        simbolo = str(input('entre com os simbolo do elemento: '))
+        nome = str(input('Entre com o nome do elemento: '))
+        elementos[simbolo] = nome
+        elementos[nome] = nome
+        periodica.append(elementos.copy())
+        input('\nElemento adicionado, pressione Enter se deseja continuar...')
+
+
+    elif opcao== "2":
+         
+        print('\nElementos da tabela periódica.')
+        print('-'*70)
+        for elemento in periodica:
+            for chave, valor in elemento.items():
+                print(f'{chave.capitalize()}: {valor}')
+            print('-'*70)
+        input('\nPresione Enter se deseja continaur...')
+    
+
+    elif opcao == "3":
+
+        simbolo = str(input('Digite o simbolo do elemnto para atualizar: '))
+
+        encontrado = False
+
+        for elemento in periodica:
+            if elemento['simbolo'] == simbolo:  
+                novo_simbolo = str(input(f'Entre com o novo simbolo para'
+                f' {simbolo} (ou deixe em branco: )'))
+                novo_nome = str(input(f'entre com o novo nome para:'
+                f'{nome} (ou deixe em branco para manter o atual): '))
+
+
+            if novo_simbolo :
+                elemento['simbolo'] = novo_simbolo
+            if novo_nome: 
+                elemento['nome'] = novo_nome
+               
+                encontrado = True
+                break
+            
+
+            if encontrado:
+                    input('\nElemento encontrado.Bata Enter se deseja continuar...')
+            else:
+                input('\nElemento não encontrado.Bata Enter se deseja continuar...')
+
+    elif opcao == "4":
+
+            simbolo = str(
+                 input('Digite o simbolo do elemento que deseja remover: '))
+            encontrado = False
+            for elemento in periodica:
+                if elemento['simbolo'] == simbolo:
+                    periodica.remove(elemento) 
+
+                    encontrado = True
+                    break
+            if encontrado:
+                input('\nElemento Removido. Enter para continuar...')
+            else:
+                input('\nElemento não encontrado. Enter para continuar...')
+
+    elif opcao == '5':
+        print('Saindo do programa.')
+        break
+    else:
+        input('opção inválida. Enter para tentar novamente...')
+
+                                                                    
+                  
+
+
+            
+                                                             
+                                          

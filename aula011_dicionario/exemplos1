@@ -27,4 +27,5 @@ for c in range(2):
     print('Detalhes dos elementos: ')
     for elemento in periodica:
         for chave, valor  in elementos.items():
-            print(f'{chave.capitalize()}')
+            print(f'{chave.capitalize()}:{valor}')
+        print('-'*70)
