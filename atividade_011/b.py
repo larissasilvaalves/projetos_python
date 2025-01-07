@@ -30,4 +30,4 @@ while True:
         cor = input(' escolha a cor que deseja trocar: ')
 
         for chave in cores.items():
-            print(chave)
+            print(chave)uthhtrjrij
