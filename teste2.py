@@ -1,18 +1,24 @@
 import os 
-import math
-import random
+
 os.system('cls')
 
 
-
-#declaração
-
-nome = str(input('Diga-me seu nome: '))
-
-print(f'Se um dia eu te encontrar do jeito que sonhei quem sabe ser seu par perfeito')
-print(f'e te amar do jeito que eu imaginei!')
-print(f'{nome}.......')
+#teste
 
 
+nome = input('insira o nome do seu jogo: ')
+personagem = input('adicione o nome do personagem: ')
+vida = input('adicone o numero de vida do personagem:')
+poder = input ('adicione o elemento principal de sua personagem: ')
+cidade = input ('adicione sua cidade natal: ')
 
+print('-'*70)
+print('-')
+print (f'fica de sua persogame no game {nome}')
+print(f'nome de sua guerreira(o) {personagem}')
+print(f' nivel de vida dele(a) {vida}')
+print(f'seu elemento principal é {poder}')
+print(f'o noe de sua cidade é {cidade}')
+
+print(f' Sua fixa de personagem fica assim!!!')
 
