@@ -14,9 +14,13 @@ for i in range(5):
 
 print('Iniciaciando o programa.')
 print('---------------------------------')
+print('')
 
 
 print(f'Sua lista irá ficar: {cores}')
+print('')
+
+
 
 while True:
     print('-'*70)
@@ -24,6 +28,8 @@ while True:
     print('1. Trocar descrição de cor.')
     print('2. Adicionar mais uma cor.')
     print('3. Modificar cor. ')
+    print('4. Ordem alfabetica')
+    print('5. Relatorio do dicionario')
     print('4. sair')
     print()
 
@@ -53,13 +59,45 @@ while True:
 
     print(f'A nova lista ira ficar {cores}')
 
+
     if opcao == '3':
+        # Exibindo as cores e suas descrições
+        for indice, (cor, descricao) in enumerate(cores.items()):
+            print(f'{indice}. {cor}: {descricao}')
+        
+        # Perguntando ao usuário qual cor ele deseja alterar
+        indice_escolhido = int(input('Escolha o número da cor que deseja mudar (índice): '))
+        
+        # Obtendo a cor e descrição correspondente ao índice
+        cor_escolhida = list(cores.keys())[indice_escolhido]
+        descricao_atual = cores[cor_escolhida]
+        
+        print(f'Você escolheu mudar a cor {cor_escolhida} com a descrição: "{descricao_atual}"')
 
-        chaves = input(f'Digite a cor que deseja mudar: ', (cores.keys()))
+        # Perguntando pela nova descrição
+        nova_descricao = input(f'Digite a nova descrição para {cor_escolhida}: ')
 
-        for i in range(len(chaves)):
-            chaves = chaves[i]
-            if chave == chaves:
-                cores[chave] = cores [chave]
+        # Atualizando a descrição no dicionário
+        cores[cor_escolhida] = nova_descricao
 
-        print(cores)
+        # Exibindo o dicionário atualizado
+        print('\nDicionário atualizado:')
+        for cor, descricao in cores.items():
+            print(f'{cor}: {descricao}')
+
+            
+
+    if opcao == '4':
+
+        print(f'Sua lista em ordem alfabetica:')
+        
+        for cor, descricao in sorted(cores.items()):
+            print(f'{cor}: {descricao}')
+
+    
+    if opcao == '5':
+
+        relatorio = {}
+
+
+        
