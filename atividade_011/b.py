@@ -30,7 +30,7 @@ while True:
     print('3. Modificar cor. ')
     print('4. Ordem alfabetica')
     print('5. Relatorio do dicionario')
-    print('4. sair')
+    print('6. sair')
     print()
 
     
@@ -97,7 +97,41 @@ while True:
     
     if opcao == '5':
 
-        relatorio = {}
+        primeira_letras = [cor[0].lower() for cor in cores]
+        print(f'As primeiras letras iram ser "{primeira_letras}"')
+
+
+    if opcao == '6':
+
+        print('sair do programa!')
+        break
+
+
+
+
+
+
+
+
+       
+     
+
+
+
+            
+
+        
+
+
+
+
+
+
+        
+
+       
+
+
 
 
         

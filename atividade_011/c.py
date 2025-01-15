@@ -60,6 +60,11 @@ while True:
 
     
     if opcao == '3':
+           
+        print('Saiu do programa!')
+        break
+          
+
           
         
         
