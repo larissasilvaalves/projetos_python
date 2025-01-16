@@ -4,12 +4,17 @@ os.system('cls')
 
 #dicionario
  
-cores = {}
+cores = {} #criação do dicionário
 
+#o for é um tipo de programação que mexe com a sequência, com ele eu posso pedir para que o programa
+#repita o código quantas vezes necessaria.
 for i in range(2):
     chave = input(f'Introduza a cor {i + 1}: ') 
     valor = input(f'Adicione uma descrição a cor {chave}: ')
     cores[chave] = valor
+
+#Utilizando o 'for', eu fiz que o programa repetisse a pergunta 5 vezes, após o usuario responder
+#Eu introduzia as duas strings(chave-valor) dentro do dicionário; 
 
 print('Iniciando o programa.')
 print('---------------------------------')
@@ -37,7 +42,13 @@ while True:
         print('\nDicionario atualizado:')
 
     print(f'Dicionário atualizado: {cores}')
-    
+#
+#
+#
+#
+#
+#
+
     if opcao == '2':
         # Exibindo as cores e suas descrições
         for indice, (cor, descricao) in enumerate(cores.items()):
