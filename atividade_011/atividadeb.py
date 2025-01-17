@@ -34,7 +34,9 @@ while True:
     print()
 
     opcao = input('Escolha uma das opções (1 - 5): ')
-
+#na primeira opção, o usuário pode acrescentar uma nova cor e sua descrição,
+#após isso, eu usei o (setdefault: o setdefault procura a chave dentro do dicionário e adiciona o valor a ela)
+#
     if opcao == '1':
         nova_chave = input('Adicone uma nova cor: ')
         novo_valor = input('Adicione o valor de sua cor:')
@@ -42,12 +44,6 @@ while True:
         print('\nDicionario atualizado:')
 
     print(f'Dicionário atualizado: {cores}')
-#
-#
-#
-#
-#
-#
 
     if opcao == '2':
         # Exibindo as cores e suas descrições

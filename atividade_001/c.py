@@ -20,6 +20,6 @@ print( '----notas-----')
 print(f'nota1 : {nota1} | nota 2 {nota2} |'
       f'' )
 print('-'*70)
-print('MEDIA DE NOTAS : {media} ')
-print('MEDIA CORRETA DAS NOTAS: {media_correta}')
+print(f'MEDIA DE NOTAS : {media} ')
+print(f'MEDIA CORRETA DAS NOTAS: {media_correta}')
 print('='*70)
