@@ -1,0 +1,20 @@
+import os 
+
+os.system('cls')
+
+
+def dados_paciente (nome='colly', nascimento='2008', peso='70kg', altura='1,74'):
+    print(f'Bem vindo(a) ao sistema senac, {nome}!')
+    print(f'O ano de nascimento de {nome} e {nascimento}')
+    print(f'O peso de {nome} e de {peso}')
+    print(f'A altra de {nome} e de {altura}m')
+    print('-'*70)
+
+
+def posicional_nomeando(nascimento, nome="colly", ):
+    print(f'Bem vindo(a) ao sistema do senac, {nome}!')
+    print(f'O ano de nascismento de {nome} e {nascimento}')
+
+
+def nomeando_posicioando():
+    print('bla bla bla')

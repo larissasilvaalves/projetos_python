@@ -1,54 +1,61 @@
-#Questão B - Apostila python
 import os 
 
 os.system('cls')
 
 #dicionario
  
-cores = {} #criação do dicionário
+cores = {}
 
-#o for é um tipo de programação que mexe com a sequência, com ele eu posso pedir para que o programa
-#repita o código quantas vezes necessaria.
+
 for i in range(5):
-    chave = input(f'Introduza a cor {i + 1}: ') 
-    valor = input(f'Adicione uma descrição a cor {chave}: ')
+    chave = input(f'Adicione uma cor {i + 1}: ')
+    valor = input(f'Adcione uma descrição sobre a cor {chave}: ')
     cores[chave] = valor
-
-#Utilizando o 'for', eu fiz que o programa repetisse a pergunta 5 vezes, após o usuario responder
-#Eu introduzia as duas strings(chave-valor) dentro do dicionário; 
 
 print('Iniciando o programa.')
 print('---------------------------------')
 print('')
+
+
 print(f'Sua lista irá ficar: {cores}')
 print('')
-
 
 while True:
     print('-'*70)
     print('/n Menu de opcões')
-    print('1. Adicionar mais uma cor.')
-    print('2. Modificar cor. ')
-    print('3. Ordem alfabetica.')
-    print('4. Relatório do dicionário.')
-    print('5. sair.')
+    print('1. Trocar descrição de cor.')
+    print('2. Adicionar mais uma cor.')
+    print('3. Modificar cor. ')
+    print('4. Ordem alfabetica.')
+    print('5. Relatorio do dicionário.')
+    print('6. sair.')
     print()
 
-    opcao = input('Escolha uma das opções (1 - 5): ')
-#na primeira opção, o usuário pode acrescentar uma nova cor e sua descrição,
-#após isso, eu usei o (setdefault: o setdefault procura a chave dentro do dicionário e adiciona o valor a ela)
-#
+    opcao = input('Escolha uma das opções (1 - 4):')
     if opcao == '1':
+    
+        cor = input('Escolha escolha qual valor deseja trocar: ')
+        nova_desc = input('Digite a nova descrição: ')
+        if cor in cores:
+            cores[cor] = nova_desc
+            print(f'A cor {cor} foi encontrada e alterdada por: {nova_desc}')
+        else:
+            print('cor não foi encontrada.')
+
+        print(f"lista alterada: {cores}")
+    elif opcao == '2':
+
         nova_chave = input('Adicone uma nova cor: ')
         novo_valor = input('Adicione o valor de sua cor:')
-        cores.setdefault(nova_chave, novo_valor)
-       
-    print(f'Dicionário atualizado: {cores}')
 
-    if opcao == '2':
+        cores.setdefault(nova_chave, novo_valor)
+
+    print(f'A nova lista ira ficar {cores}')
+    if opcao == '3':
         # Exibindo as cores e suas descrições
         for indice, (cor, descricao) in enumerate(cores.items()):
             print(f'{indice}. {cor}: {descricao}')
+                   
         # Perguntando ao usuário qual cor ele deseja alterar
         indice_escolhido = int(input('Escolha o número da cor que deseja mudar (índice): '))
         # Obtendo a cor e descrição correspondente ao índice
@@ -63,18 +70,18 @@ while True:
         print('\nDicionário atualizado:')
         for cor, descricao in cores.items():
             print(f'{cor}: {descricao}')
-    
-    if opcao == '3':
-        print(f'Sua lista em ordem alfabetica:')   
-        for cor, descricao in sorted(cores.items()):
-            print('\nDicionário atualizado:')
-            print(f'{cor}: {descricao}')
 
     if opcao == '4':
+        print(f'Sua lista em ordem alfabetica:')
+        for cor, descricao in sorted(cores.items()):
+            print(f'{cor}: {descricao}')
+
+    if opcao == '5':
         primeira_letras = [cor[0].lower() for cor in cores]
         print(f'As primeiras letras iram ser "{primeira_letras}"')
         print(len(primeira_letras))
 
-    if opcao == '5':
-        print('saindo do programa!')
+
+    if opcao == '6':
+        print('sair do programa!')
         break
