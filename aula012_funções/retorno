@@ -1,0 +1,17 @@
+import os
+
+os.system('cls')
+
+
+def calcular_velocidade(distancia, tempo):
+
+    velocidade_media = distancia / tempo
+    return velocidade_media
+ 
+
+distancia = float(input('Digite a distancia percorrida:'))
+tempo = float(input('Digite o tempo gasto (em horas):'))
+
+velocidade = calcular_velocidade(distancia, tempo)
+ 
+print(f'A velocidade média é {velocidade: .2f} km/h.')

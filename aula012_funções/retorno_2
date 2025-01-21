@@ -1,0 +1,28 @@
+import os 
+
+os.system('cls')
+
+
+def calcular_media (espaco, tempo, espaco_um, tempo_um):
+
+
+    if espaco_um == 'metros':
+        espaco = espaco / 1000
+
+    if tempo_um == 'minutos':
+
+        tempo == tempo / 60
+
+    vm_media = espaco / tempo
+    return vm_media
+
+
+espaco = float(input('Distância percorrida(km): '))
+espaco_um = input('A distância percorrida é em km ou metros? ')
+tempo = float(input('Digite o tempo gasto: '))
+tempo_um = input('O tempo é em horas ou minutos: ')
+
+
+vm = calcular_media (espaco, tempo, espaco_um, tempo_um)
+
+print(F'a vm média é {vm: .2f} {espaco_um} / {tempo_um}.')

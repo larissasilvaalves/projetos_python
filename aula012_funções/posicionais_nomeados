@@ -13,8 +13,19 @@ def dados_paciente (nome='colly', nascimento='2008', peso='70kg', altura='1,74')
 
 def posicional_nomeando(nascimento, nome="colly", ):
     print(f'Bem vindo(a) ao sistema do senac, {nome}!')
-    print(f'O ano de nascismento de {nome} e {nascimento}')
+    print(f'O ano de nascismento de {nome} e {nascimento}.')
 
 
-def nomeando_posicioando():
-    print('bla bla bla')
+def nomeando_posicional(nome='colly', nascimento):
+    print(f'Bem vindo(a) ao sistema senac, {nome}!')
+    print(f'O ano de nascimento de {nome} é {nascimento}.')
+    print('-'*70)
+
+
+
+
+dados_paciente()
+
+dados_paciente(nome='davi', nascimento=2006, peso=62, altura=1.84)
+dados_paciente(nome='larissa', nascimento=2008, peso=67, altura= 1.64 )
+dados_paciente(altura=1.66, peso=46, nome="bia", nascimento= 2008)
