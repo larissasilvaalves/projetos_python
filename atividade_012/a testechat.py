@@ -5,23 +5,24 @@ import os
 os. system('cls')
 
 def numeros(lista):
-    
     numeros_pares = []
     numeros_impares = []
 
     for nume in lista:
+        # Converte nume para inteiro, se já não for
+        nume = int(nume)  # Garantir que nume é um número
         
-        nume = int(nume)
-
-        if nume % 2 == 0 :
+        if nume % 2 == 0:
             numeros_pares.append(nume)
         else:
-            numeros_impares.append(nume) 
+            numeros_impares.append(nume)
 
     return numeros_impares, numeros_pares
-    
 
-lista = [ '1', '2', '3', '4', '5']
+# Exemplo de lista com strings numéricas
+lista = ['1', '2', '3', '4', '5']  # Lista de strings
+
 impares, pares = numeros(lista)
-print(f'impares: {impares}')
-print(f'pares: {pares}')
+
+print(f'Impares: {impares}')
+print(f'Pares: {pares}')
