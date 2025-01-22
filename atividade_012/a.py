@@ -18,10 +18,15 @@ def numeros(lista):
         else:
             numeros_impares.append(nume) 
 
-    return numeros_impares, numeros_pares
+        quantidade_par = len(numeros_pares)
+        quantidade_impar = len(numeros_impares)
+
+    return numeros_impares, numeros_pares, quantidade_par, quantidade_impar
     
 
 lista = [ '1', '2', '3', '4', '5']
-impares, pares = numeros(lista)
+impares, pares, quantidade_par, quantidade_impar = numeros(lista)
 print(f'impares: {impares}')
 print(f'pares: {pares}')
+print(f'Tem {quantidade_impar} números impares.')
+print(f'Tem {quantidade_par} números pares')

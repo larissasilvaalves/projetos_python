@@ -6,8 +6,7 @@ def cadastro_dos_alunos():
 
     alunos = []
 
-    quantidade_de_alunos = int(input('Quantos aluno iram fazer a matrícula: '))
-
+    quantidade_de_alunos = int(input('Quantos alunos iram fazer a matrícula: '))
     for i in range(quantidade_de_alunos):
 
         print(f'n\Cadastro dos alunos {i+1}')
@@ -30,11 +29,7 @@ def cadastro_dos_alunos():
 
 alunos_cadastrados = cadastro_dos_alunos()
 
-
-
 print('\n Cadastro dos alunos vai ser: ')
-
-for aluno in cadastro_dos_alunos : 
-    print(f'Nome = {aluno['nome']}, Aluno = {aluno['matrícula']}, nascimento = {aluno['matrícula']} ')
-
-    
+for aluno in alunos_cadastrados: 
+    print(f'Sua lista de {aluno}')
+    print(f'Nome = {aluno["nome"]}, Aluno = {aluno["matrícula"]}, nascimento = {aluno["nascimento"]} ')

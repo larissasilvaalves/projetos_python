@@ -10,7 +10,7 @@ def numeros(lista):
 
     for nume in lista:
         # Converte nume para inteiro, se já não for
-        nume = int(nume)  # Garantir que nume é um número
+        # nume = int(nume)  # Garantir que nume é um número
         
         if nume % 2 == 0:
             numeros_pares.append(nume)
@@ -20,7 +20,7 @@ def numeros(lista):
     return numeros_impares, numeros_pares
 
 # Exemplo de lista com strings numéricas
-lista = ['1', '2', '3', '4', '5']  # Lista de strings
+lista = [1,2,3,4,5,6,7,8,9]  # Lista de strings
 
 impares, pares = numeros(lista)
 
