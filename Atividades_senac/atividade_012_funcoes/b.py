@@ -13,7 +13,7 @@ def cadastro_dos_alunos():
 
         nome = input('Nome do aluno: ')
         nascimento = input('Nascimento do aluno: ')
-        matricula = input('matrícula:  ')
+        matricula = input('Matrícula:  ')
 
         aluno = {
 

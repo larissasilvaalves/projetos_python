@@ -19,12 +19,11 @@ def dicionario(lista_chave, lista_valor):
     return dic
 
 
-# Invocando a função(NÃO AGUENTO MAIS DEF)
-
-dicionari3 = dicionario(dic)
 
 lista_chave = ["nome", 'peso', 'idade']
 lista_valor = ['john', 40, 1.80]
+
+dicionari3 = dicionario(lista_chave, lista_valor)
 
 
 
