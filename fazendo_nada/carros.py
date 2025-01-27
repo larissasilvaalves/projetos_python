@@ -43,9 +43,8 @@ def quiz_carro():
     else:
         print("Errado! A suspensão serve para suavizar os impactos com o solo e proporcionar mais conforto.\n")
     
-    print("\nFim do quiz! Espero que tenha aprendido mais sobre o funcionamento dos carros. Até a próxima!")
 
-    resposta_6 = input('\nO que faz o sensor de oxigênio no sistema de escapamento de um carro? \n(a) Controla a quantidade de combustível injetado no motor\n(b)Mede a eficiência do catalisador\nDetecta falhas no sistema de ignição').lower()
+    resposta_6 = input('\nO que faz o sensor de oxigênio no sistema de escapamento de um carro? \n(a) Controla a quantidade de combustível injetado no motor\n(b)Mede a eficiência do catalisador\n(c)Detecta falhas no sistema de ignição').lower()
     if resposta_6 == 'a':
         print('Correto! O sensor de oxigênio mede a quantidade de oxigênio nos gases de escapamento e ajusta a quantidade de combustível injetado no motor.')
     else:
