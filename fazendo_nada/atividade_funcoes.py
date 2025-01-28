@@ -6,22 +6,34 @@ import os
 
 os.system('cls')
 
-def cadastro_de_produtos():
+cadastro_de_produtos = []
 
-    produtos = input('Quantos produtos você deseja adicionar: ')
-    produtos = int(produtos)
+def cadastro():
 
-    for i in range (produtos):
-        nomes = input('Adicione o nome do produto: ')
-        lista_de_produtos = cadastro_de_produtos.append(nomes)
-        print(lista_de_produtos)
+    quantidade_produtos = int(input('Adicione a quantidade de produtos: '))
 
-        return lista_de_produtos
+    for i in range (quantidade_produtos):
+        print (f'Cadastro dos produtos {i+1}')
+        produto = input('Adicione o nome do produto: ')
+        valor = float(input('Valor do produto: '))
+        compras = { 'produto':{produto},'valor': {valor}}
+
+        cadastro_de_produtos.append(compras)
+
+        return cadastro_de_produtos
     
 
 
 
+cadastro_de_produtos = cadastro()
+
+print(cadastro_de_produtos)
 
 
 
+
+
+
+
+print(cadastro)
     
