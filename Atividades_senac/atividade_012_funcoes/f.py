@@ -14,14 +14,16 @@ def dicionario(lista_chave, lista_valor):
 
     for chave, valor in dic.items():
         print(f'{chave} : {valor}')
-        
+    
 
     return dic
 
 
 
+
 lista_chave = ["nome", 'peso', 'idade']
 lista_valor = ['john', 40, 1.80]
+
 
 dicionari3 = dicionario(lista_chave, lista_valor)
 
