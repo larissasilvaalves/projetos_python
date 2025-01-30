@@ -4,7 +4,6 @@ import os
 os.system('cls')
 
 def fahrenheit_para_celsius(fahrenheit):
-   
     celsius = (fahrenheit - 32) * 5 / 9
     return celsius
 

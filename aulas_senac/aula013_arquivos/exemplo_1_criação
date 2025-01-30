@@ -1,0 +1,24 @@
+import os 
+import csv
+
+# criando uma lista de dicionários: cada dicionário é uma linha (registro)
+lista = [ 
+    {'nome' : 'Agatha' , 'telefone' : '(32)99196-0000', 'cidade':'Juiz de fora'},
+    {'nome' : 'bia', 'telefone' : "(32)99169-0000", 'cidade' : 'Juiz de fora'},
+    {'nome' : 'coly', 'telefone' : '(32)99345-9876', 'Cidade' : 'Juiz de fora'}
+    {'nome' : 'isís', 'telefone' : '(32)9445-7654', 'cidade' : 'Juiz de fora'}
+
+]
+
+# caminho para a pasta onde o arquivo csv sera salvo
+pasta = 'arquivo_cvs/gravação'
+
+# Verificando se a pasta existe, se não, irá criá-la
+os.makedirs(pasta, exist_ok=True)
+
+#nome para o arquivo CVS para gravar as informações
+arquivo = 'arquivo_cvs/gravação/alunas.cvs'
+
+caminho_arquivo = os.path.join(pasta, arquivo)
+
+ 
