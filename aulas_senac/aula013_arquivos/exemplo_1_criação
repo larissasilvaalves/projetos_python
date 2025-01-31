@@ -5,7 +5,7 @@ import csv
 lista = [ 
     {'nome' : 'Agatha' , 'telefone' : '(32)99196-0000', 'cidade':'Juiz de fora'},
     {'nome' : 'bia', 'telefone' : "(32)99169-0000", 'cidade' : 'Juiz de fora'},
-    {'nome' : 'coly', 'telefone' : '(32)99345-9876', 'Cidade' : 'Juiz de fora'}
+    {'nome' : 'coly', 'telefone' : '(32)99345-9876', 'Cidade' : 'Juiz de fora'},
     {'nome' : 'isís', 'telefone' : '(32)9445-7654', 'cidade' : 'Juiz de fora'}
 
 ]
@@ -18,7 +18,15 @@ os.makedirs(pasta, exist_ok=True)
 
 #nome para o arquivo CVS para gravar as informações
 arquivo = 'arquivo_cvs/gravação/alunas.cvs'
-
+# Caminho completodo arquivo CVS
 caminho_arquivo = os.path.join(pasta, arquivo)
 
- 
+# Abre o arquivo "arquivo" no modo de escrita ('w')
+# Se o arquivo não exisitir, ele sera´criado; se exixiir, será truncado (esvaziado)
+# newline ='': Evita a adição de linhas em branco extras ao gravar o arquivo em algumas plataformas.
+#  as arquivo_cvs: Atribui o objeto arquivo ao "arquivo_cvs" para ser usado dentro do bloco with.
+with open(arquivo, 'w', newline='') as arquivo_cvs:
+
+    #campos = ['name', 'telefone', 'cidade']: Define a lista de nomes de campos
+    #(cabeçalhos das colunas do CVS).
+    campos = ['nome', 'telefone', 'cidade'] 

@@ -1,0 +1,25 @@
+import os 
+
+os.system('cls')
+
+
+class Veiculo:
+    def _init_ (self, marca, modelo, ano, cor):
+        self.marca = marca
+        self.modelo = modelo
+        self.ano = ano
+        self.cor = cor
+
+
+
+os.system('cls')
+print('-'*70)
+marca = input('Digite a marca do veículo: ')
+modelo = input('Digite o modelo do veículo: ')
+ano = int(input('Adicione o ano: '))
+cor = input('Digite a cor do veículo: ')
+
+#criando
+Veiculo1 = Veiculo(marca, modelo, ano, cor)
+
+print()
