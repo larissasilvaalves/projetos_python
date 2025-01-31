@@ -14,5 +14,5 @@ numero = int(input('Escreva um número: '))
 
 #invocando a função
 
-resultado = calculando(numero, numero)
+resultado = calculando(dobro= numero, triplo=numero)
 print(f'{resultado},  {resultado}')

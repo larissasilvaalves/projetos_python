@@ -54,3 +54,26 @@ try:
 except IOError:
     print('Erro: Operação de E/S falhou!')
 
+    
+#atrribueError
+class exemplo():
+    def _init(self):
+        self.atributo = "valor"
+
+objeto = exemplo ()
+try:
+    print(objeto.atributo_inesxistente)
+except AttributeError:
+    print('erro: Atributo não encontrado no objeto!')
+
+#importError
+try:
+    import modulo_inexistente
+except ImportError:
+      
+
+
+
+
+
+      
