@@ -1,9 +1,7 @@
 #Crie um programa que peça ao usuário 2 números maiores que 0 e menores que 11. 
 #Depois mostre um menu com as seguintes operações:
 #1. Soma: 2. Subtração : 3. Produto : 4. Divisão : 5. Divisão inteira : 6. 
-#Resto da divisão.
-#O usuário deverá escolher um número maior ou  igual a 1 e menor ou igual a 6. 
-#Em seguida, você criará funções que retornem os resultados das operações, imprimindo os resultados na tela.
+#Resto da divisão.  
 import os
 os.system('cls')
 class operacoes: 
@@ -20,15 +18,15 @@ class operacoes:
 nume1 = int(input('Adicione um número maior que 0: '))
 nume2 = int(input('O segundo número tem que ser menor que 11: '))
 if nume2 > 11: 
-    print('O número é maior que 11!, escreva um número menor que 11!')
+    print('O número é maior que 11!, escreva um número menor!')
     exit()
     #O exit() é uma função em Python que termina a execução de um programa de forma imediata. 
     #Quando chamada, ela encerra o programa, independentemente de onde for executada.
 os.system('cls')
 #operações
 soma = nume1 + nume2
-subtracao = nume1 - nume2
-produto = nume1*nume2
+subtracao = nume1 - nume2                       
+produto = nume1*nume2                          #aqui são as instâncias dos atributos 
 divisao = nume1/nume2
 divisão_inteira = nume1//nume2
 resto_da_divisao = nume1 % nume2
@@ -49,3 +47,9 @@ print(f'Resto da divisão: {resto_da_divisao}')
 #Acessando atributos e métodos: 
 #Ele permite que você acesse e modifique os atributos e métodos de uma instância particular da classe, 
 #garantindo que cada objeto tenha seus próprios valores e comportamentos.
+
+
+#No contexto de programação, especialmente em Python,
+#o self é uma referência à instância do objeto que está sendo manipulado dentro de uma classe. 
+#Ele serve para acessar atributos e métodos da própria instância da classe, permitindo que o objeto se "reconheça" e
+#interaja com seus próprios dados e comportamentos.
